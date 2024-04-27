@@ -22,3 +22,15 @@ function countBy(x, n) {
     }
     return z;
 }
+
+
+
+function countBy(x, n) {
+    let z = [];
+    let count = 0;
+    for (let i = 0; i < n; i++) {
+      count += x;
+      z[i] = count;
+     }
+    return z;
+  }
