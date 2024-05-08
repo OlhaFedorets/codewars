@@ -10,9 +10,15 @@
 
 
 
-// SOLUTION:
+// SOLUTIONS:
 
 function digitize(n) {
     let arr = Array.from(String(n), Number)
     return arr.reverse()
+}
+
+
+
+function digitize(n) {
+    return [...n + ''].map(Number).reverse()
 }
