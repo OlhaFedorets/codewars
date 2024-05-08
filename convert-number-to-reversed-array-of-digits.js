@@ -22,3 +22,9 @@ function digitize(n) {
 function digitize(n) {
     return [...n + ''].map(Number).reverse()
 }
+
+
+
+function digitize(n) {
+    return n.toString().split('').map(Number).reverse()
+}
