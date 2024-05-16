@@ -9,7 +9,7 @@
 
 
 
-//SOLUTION:
+//SOLUTIONS:
 
 function doubleChar(str) {
     let arr = str.split('')
@@ -18,4 +18,9 @@ function doubleChar(str) {
         newStr.push(arr[i] + arr[i])
     }
     return newStr.join('')
+}
+
+
+function doubleChar(str) {
+    return str.split('').map((i) => i + i).join('')
 }
