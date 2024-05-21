@@ -19,7 +19,7 @@
 
 
 
-//SOLUTION:
+//SOLUTIONS:
 
 function contamination(text, char) {
     if (text.length == 0 || char.length == 0) {
@@ -30,3 +30,11 @@ function contamination(text, char) {
         result.push(char)
     } return result.join('')
 }
+
+
+
+
+function contamination(text, char){
+    return text.replace(/./g, char)
+    //return char.repeat(text.length)
+  }
