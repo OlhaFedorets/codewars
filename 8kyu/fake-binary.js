@@ -6,8 +6,13 @@
 
 
 
-// SOLUTION
+// SOLUTIONS:
 
 function fakeBin(x){
     return [...x].map(a => a < 5 ? a = 0 : a = 1).join('')
 }
+
+
+function fakeBin(x) {
+    return x.replace(/\d/g, a => a < 5 ? 0 : 1)
+    }
