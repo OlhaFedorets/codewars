@@ -22,9 +22,15 @@
 
 
 
-//SOLUTION:
+//SOLUTIONS:
 
 function stairsIn20(s) {
     let arr = Object.values(s)
     return arr.flat().reduce((a, b) => a + b, 0) * 20
+}
+
+
+
+function stairsIn20(s) {
+    return s.flat().reduce((a, b) => a + b) * 20
 }
