@@ -18,7 +18,7 @@
 
 
 
-//SOLUTION:
+//SOLUTIONS:
 
 function gHappy(str) {
     for (let i = 0; i < str.length; i++) {
@@ -26,4 +26,10 @@ function gHappy(str) {
             return false
         }
     } return true
+}
+
+
+
+function gHappy(str) {
+    return /g/g.test(str.replace(/g{2,}/g, '')) ? false : true
 }
