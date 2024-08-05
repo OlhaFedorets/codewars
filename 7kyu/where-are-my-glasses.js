@@ -17,7 +17,7 @@
 
 
 
-//SOLUTION:
+//SOLUTIONS:
 
 function findGlasses(arr) {
     for (let i = 0; i < arr.length; i++) {
@@ -25,4 +25,9 @@ function findGlasses(arr) {
             return i
         }
     }
+}
+
+
+function findGlasses(arr) {
+    return arr.findIndex(a => /O-+O/.test(a))
 }
