@@ -25,3 +25,8 @@ function doubleEveryOther(a) {
 function doubleEveryOther(a) {
     return a.map((el, ind) => ind % 2 == 1 ? el * 2 : el);
 }
+
+
+function doubleEveryOther(a) {
+    return a.map((n, i) => i % 2 ? n * 2 : n);
+}
