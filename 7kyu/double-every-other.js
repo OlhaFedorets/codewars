@@ -12,11 +12,16 @@
 
 
 
-//SOLUTION:
+//SOLUTIONS:
 
 function doubleEveryOther(a) {
     for (let i = 1; i < a.length; i += 2) {
         a[i] *= 2
     }
     return a;
+}
+
+
+function doubleEveryOther(a) {
+    return a.map((el, ind) => ind % 2 == 1 ? el * 2 : el);
 }
