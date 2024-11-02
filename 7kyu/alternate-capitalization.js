@@ -12,14 +12,14 @@
 
 
 
-//SOLUTION:
+//SOLUTIONS:
 
 
 function capitalize(s) {
     let firstStr = ''
     let secondStr = ''
     for (i = 0; i < s.length; i++) {
-        if (i === 0 || i % 2 === 0) {
+        if (i % 2 === 0) {
             firstStr += s[i].toUpperCase()
             secondStr += s[i]
         } else {
@@ -28,4 +28,14 @@ function capitalize(s) {
         }
     }
     return [firstStr, secondStr]
+};
+
+
+
+
+function capitalize(s) {
+    let even = [...s].map((el, i) => i % 2 == 0 ? el.toUpperCase() : el).join('')
+    let odd = [...s].map((el, i) => i % 2 != 0 ? el.toUpperCase() : el).join('')
+
+    return [even, odd];
 };
