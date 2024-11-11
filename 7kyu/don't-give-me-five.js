@@ -19,7 +19,7 @@
 
 
 
-//SOLUTION:
+//SOLUTIONS:
 
 function dontGiveMeFive(start, end) {
     let total = 0
@@ -28,4 +28,14 @@ function dontGiveMeFive(start, end) {
             total++
         }
     } return total
+}
+
+
+
+function dontGiveMeFive(start, end) {
+    let total = 0
+    for (let i = start; i <= end; i++) {
+        !/5/.test(i) && total++
+    }
+    return total
 }
