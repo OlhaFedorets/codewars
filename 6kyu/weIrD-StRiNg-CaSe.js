@@ -17,7 +17,7 @@
 
 
 
-//SOLUTION:
+//SOLUTIONS:
 
 
 function toWeirdCase(string) {
@@ -26,4 +26,14 @@ function toWeirdCase(string) {
         arr[i] = arr[i].split('').map((el, i) => i % 2 == 0 ? el.toUpperCase() : el.toLowerCase()).join('')
     }
     return arr.join(' ')
+}
+
+
+
+function toWeirdCase(string) {
+    return string.split(' ')
+        .map(m => m.split('')
+            .map((el, i) => i % 2 == 0 ? el.toUpperCase() : el.toLowerCase())
+            .join(''))
+        .join(' ')
 }
