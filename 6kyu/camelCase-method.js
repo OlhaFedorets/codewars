@@ -9,7 +9,7 @@
 
 
 
-// SOLUTION: 
+// SOLUTIONS: 
 
 String.prototype.camelCase = function () {
     let arr = this.split(' ')
@@ -17,4 +17,11 @@ String.prototype.camelCase = function () {
         arr[i] = arr[i].replace(/^[a-z]/, u => u.toUpperCase())
     }
     return arr.join('')
+}
+
+
+String.prototype.camelCase = function () {
+    return this.split(' ')
+        .map(el => el.charAt(0).toUpperCase() + el.slice(1))
+        .join('')
 }
