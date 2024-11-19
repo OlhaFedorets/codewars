@@ -19,7 +19,7 @@
 
 
 
-//SOLUTION:
+//SOLUTIONS:
 
 function parse(data) {
     let arr = []
@@ -32,3 +32,20 @@ function parse(data) {
                         : acc = acc)
     return arr
 } 
+
+
+
+
+function parse(data) {
+    let arr = []
+    data.split('')
+        .reduce((acc, val) => {
+            val == 'i' ? acc += 1 : 
+            val == 'd' ? acc -= 1 : 
+            val == 's' ? acc = acc * acc : 
+            val == 'o' ? arr.push(acc) : 
+            acc = acc
+            return acc
+        }, 0)
+    return arr
+}
