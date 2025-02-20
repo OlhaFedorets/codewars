@@ -10,7 +10,7 @@
 
 
 
-// solution:
+// solutions:
 
 function getCount(str) {
     let vow = ['a', 'e', 'i', 'o', 'u']
@@ -20,4 +20,13 @@ function getCount(str) {
         count += vow.filter(el => el === arr[i]).length
     }
     return count
+}
+
+
+
+
+function getCount(str) {
+    let arr=str.split('')
+    let vow=['a', 'e', 'i', 'o', 'u']
+    return vow.map(el=> arr.filter(v=>el===v).length).reduce((a,b)=>a+b,0)
 }
