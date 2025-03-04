@@ -10,8 +10,13 @@
 
 
 
-//SOLUTION:
+//SOLUTIONS:
 
 function accum(s) {
 	return s.split('').map((el,i)=> el.repeat(i+1).toLowerCase().replace(/^./, char => char.toUpperCase())).join('-')
+}
+
+
+function accum(s) {
+	return s.split('').map((el,i) => el.toUpperCase()+el.toLowerCase().repeat(i)).join('-')
 }
