@@ -17,8 +17,13 @@
 
 
 
-//SOLUTION:
+//SOLUTIONS:
 
 function century(year) {
     return (year + 99) / 100 | 0;
+}
+
+
+function century(year) {
+    return Math.ceil(year/100);
 }
