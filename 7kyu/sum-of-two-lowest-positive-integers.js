@@ -13,7 +13,7 @@
 
 
 
-//SOLUTION:
+//SOLUTIONS:
 
 function sumTwoSmallestNumbers(numbers) {  
     const a = Math.min(...numbers)
@@ -22,4 +22,10 @@ function sumTwoSmallestNumbers(numbers) {
     } else {
         const b =  Math.min(...numbers.filter(n => n != a))
         return a+b}
+}
+
+
+
+function sumTwoSmallestNumbers(numbers) {  
+    return numbers.sort((a,b)=>a-b).slice(0,2).reduce((a,b)=>a+b)
 }
