@@ -7,7 +7,7 @@
 // so the function should return 5 in this case
 
 
-//Solution:
+//Solutions:
 
 function countBits(n) {
     return n.toString(2)
@@ -17,4 +17,10 @@ function countBits(n) {
         .reduce(function (a, b) {
             return a + b;
         }, 0);
+}
+
+
+
+function countBits(n) {
+    return n.toString(2).split("0").join("").length;
 }
