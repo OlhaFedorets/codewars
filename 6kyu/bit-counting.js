@@ -24,3 +24,9 @@ function countBits(n) {
 function countBits(n) {
     return n.toString(2).split("0").join("").length;
 }
+
+
+
+function countBits(n) {
+    return n.toString(2).replace(/0/g, "").length;
+}
