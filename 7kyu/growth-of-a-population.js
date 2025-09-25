@@ -35,7 +35,7 @@
 
 
 
-//Solution:
+//Solutions:
 
 function nbYear(p0, percent, aug, p) {
     let count = 0
@@ -44,4 +44,14 @@ function nbYear(p0, percent, aug, p) {
         count += 1
     }
     return count
+}
+
+
+
+
+function nbYear(p0, percent, aug, p) {
+    for (var i = 0; p0 < p; i++) {
+        p0 = Math.floor(p0 + p0 * (percent / 100) + aug)
+    }
+    return i
 }
