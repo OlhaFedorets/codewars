@@ -16,11 +16,17 @@
 
 
 
-//Solution:
+//Solutions:
 
 
 String.prototype.toAlternatingCase = function () {
     var ns = "";
     for (var i = 0; i < this.length; i++) ns += (this.slice(i, i + 1) == this.slice(i, i + 1).toUpperCase()) ? this.slice(i, i + 1).toLowerCase() : this.slice(i, i + 1).toUpperCase();
     return ns;
+}
+
+
+
+String.prototype.toAlternatingCase = function () {
+    return this.split('').map(c => c === c.toUpperCase() ? c.toLowerCase() : c.toUpperCase()).join('')
 }
