@@ -18,7 +18,7 @@
 
 
 
-//Solution:
+//Solutions:
 
 function arr2bin(arr) {
     let num = 0
@@ -26,4 +26,11 @@ function arr2bin(arr) {
         (typeof arr[i] === "number") && (num += arr[i])
     }
     return num.toString(2)
+}
+
+
+
+
+function arr2bin(arr){
+    return arr.filter(el => typeof el === 'number').reduce((acc,item) => acc+item, 0).toString(2)
 }
