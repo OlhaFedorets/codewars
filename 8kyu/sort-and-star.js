@@ -11,8 +11,13 @@
 
 
 
-//Solution:
+//Solutions:
 
 function twoSort(s) {
     return s.sort()[0].split('').join('***')
+}
+
+
+function twoSort(s) {
+    return s.sort()[0].replace(/(?!^)(?=.)/g, '***')
 }
